@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="18dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/button_back13"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/ic_launcher_background"
+            android:onClick="quit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Шашки — логическая настольная игра, рассчитанная на двух человек. Есть десятки разновидностей, но одними из самых популярных и распространённых в России являются русские шашки. У соперников есть по 12 фишек, которые определённым образом расставляются на доске, состоящей из 64 квадратов чёрного и белого цветов.
+Игроки ходят по очереди, передвигая одну шашку по диагонали на одну клетку и только вперёд. При этом переставлять их можно исключительно на тёмные ячейки. Если ваша шашка находится рядом с шашкой соперника, за которой есть пустое тёмное поле, её нужно «съесть» (перепрыгнуть через неё, выбив с поля, и поставить свою в свободную клетку).
+Когда шашка доходит до противоположного края доски, она автоматически становится дамкой и обретает суперспособность — ходить по тёмным диагоналям на любое количество клеток вперёд и назад.
+Партию выигрывает тот, кто «съел» все шашки противника либо поставил его в такое положение, что у него не осталось ходов. Также победа присуждается тому, чей соперник сдался и решил завершить игру."
+            android:textAlignment="center"
+            android:textSize="24sp"/>
+
+
+    </LinearLayout>
+</ScrollView>

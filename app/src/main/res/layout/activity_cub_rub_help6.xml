@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="18dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/button_back9"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/ic_launcher_background"
+            android:onClick="quit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_back" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="403dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="80dp"
+        android:text="Шаг 6. Разворот угловых кубиков Разворот всех угловых кубиков выполняется простой формулой П’Н’ПН, выполненной множество раз. Когда начнете выполнять этот алгоритм, может показаться, что Вы все разрушили и нужно начинать сначала. Но нет! Кубик соберется тогда, когда все углы встанут на свои места. Чтобы было проще понять, внимательно действуйте по этой инструкции: 1. Возьмите кубик в руки, как показано на рисунке."
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="366dp"
+        android:layout_height="125dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:srcCompat="@drawable/step6" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="397dp"
+            android:layout_height="289dp"
+            android:layout_marginTop="10dp"
+            android:text="2. Сделайте формулу П’ Н’ П Н П’ Н’ П Н (1 или два раза). 3. Когда первый угловой кубик уже правильно расположен, поверните верхний слой так, чтобы в верхний правый угол переместился следующий угловой кубик. Если следующий угловой кубик уже повернут правильно (не требует разворота), сделайте еще один поворот верхнего слоя. 4. Сделайте формулу П’ Н’ П Н П’ Н’ П Н (1 или два раза). 5. Повторяйте до тех пор, пока кубик не соберется."
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Menu"
+            android:text="Меню"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+    </LinearLayout>
+</ScrollView>

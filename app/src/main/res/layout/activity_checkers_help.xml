@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="18dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/button_back13"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/ic_launcher_background"
+            android:onClick="quit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Как расставить шашки в начале игры?"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Всё предельно просто. Нужно разместить доску так, чтобы нумерация клеток была по краям. Шашки ставят на противоположных сторонах поля в три ряда по 4 штуки в каждом. Располагать их можно исключительно на тёмных клетках. С каждого края должны находиться фишки только одного цвета."
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/checkers_rasstanovka" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Как играть в шашки?"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+            Договоритесь, кто будет играть белыми шашками, а кто чёрными, либо проведите жеребьёвку. Первый ход всегда делают белые (если вы не установили своё правило).
+ Самые популярные комбинации для старта — С3 — D4 или C3 — B4: они не позволят чёрным получить преимущество на поле. Аналогичный эффект у ходов E3 — D4 или G3 — F4."
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/checkers_going" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Следующий ход делают чёрные, затем — белые, и так по очереди. Если рядом с вашей шашкой есть фишка противника, а за ней — пустая тёмная клетка, вы обязаны «съесть» шашку. Иногда за один ход удаётся поглотить сразу несколько, переставляя свою на пустые клетки. При взятии чужой фишки можно двигаться по диагонали как вперёд, так и назад.
+Если у вас несколько возможностей для удара, можно выбрать любую — какая вам будет выгоднее. Затем ход перейдёт к сопернику."
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/checkers_eating" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Напомним, когда шашка достигает противоположного края поля, она становится дамкой и может ходить на любое количество тёмных клеток по диагонали вперёд или назад. Чтобы не запутаться, такие фишки переворачивают на другую сторону либо ставят сверху выбитую."
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/checkers_queen" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="При этом, если вы заимели дамку, побив фишку соперника, и в новом статусе вам предоставляется возможность «съесть» ещё одну или несколько, необходимо продолжать бой тем же ходом. Если же ваша шашка стала дамкой без взятия чужих фишек, дальше ходит соперник.
+К слову, дамка обязана «съесть» шашку противника, расположенную в одной диагонали с ней, если дальше есть пустая клетка. Причём можно занимать не только следующую за побитой фишкой ячейку, а любую в той же линии.
+Когда у соперника не останется ни одной шашки либо возможности ходов, он будет считаться проигравшим. Если обоим игрокам некуда ходить, объявляется ничья. Также в любой момент игры один из соперников может сдаться и автоматически признать поражение."
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"/>
+
+        <ImageButton
+            android:id="@+id/button_back14"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/ic_launcher_background"
+            android:onClick="quit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_back" />
+
+    </LinearLayout>
+</ScrollView>
